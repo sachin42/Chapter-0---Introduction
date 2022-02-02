@@ -4,7 +4,7 @@ float temp_c;     /* degrees centigrade */
 char line_text[50];        /* a line of input */
 
 int main() {
-	printf("Input a temperature (in Centigrade): ");
+	printf("Input  temperature (in Centigrade): ");
 	fgets(line_text, sizeof(line_text), stdin);
 	sscanf(line_text, "%f", &temp_c);
 
