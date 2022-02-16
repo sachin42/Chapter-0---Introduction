@@ -1,13 +1,16 @@
 #include <stdio.h>
+float kmph;              /* kilometers per hour */
+float miph;              /* miles per hour (to be computed) */
+char  line_text[50];      /* a line from the keyboard */
 
-// formula for km/hr to miles/hr is Km/hr * 0.6213712
+int main()
+{
+	printf("Input kilometers per hour: ");
+	fgets(line_text, sizeof(line_text), stdin);
+	sscanf(line_text, "%f", &kmph);
 
-int main() {
+	miph = (kmph * 0.6213712);
+	printf("%f miles per hour\n", miph);
 
-    int speed;
-    printf("Enter speed in Km/hr:");
-    scanf("%d", &speed);
-
-    printf("Speed in Mile/hr is %.2f\n", speed * 0.6213712);
-    return 0;
+	return(0);
 }
