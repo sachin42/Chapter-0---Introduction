@@ -1,3 +1,3 @@
 # Chapter-0---Introduction
 my c programming exercise folder
-time action genrate create shot and be freee ...................................
+online w3schools version of programs
