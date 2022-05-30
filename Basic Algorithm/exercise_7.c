@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//pointer example w3schools
 
 int main() {
   int myAge = 43;
