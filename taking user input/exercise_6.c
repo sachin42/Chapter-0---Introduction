@@ -1,21 +1,19 @@
 #include <stdio.h>
-int tot_mins;  /* given number of minutes */
-int hrs;          /* number of hours (to be computed) */
-int mins;        /* number of minutes (to be computed) */
 
-const int MINaHOUR = 60;      /* number of minutes in an hour */
-
-char line_text[50];      /* line of input from keyboard */
+// minutes as input
+// hours  and minuts as output
 
 int main() {
-	printf("Input minutes: ");
-	fgets(line_text, sizeof(line_text), stdin);
-	sscanf(line_text, "%d", &tot_mins);
 
-	hrs = (tot_mins / MINaHOUR);
-	mins = (tot_mins % MINaHOUR);
+    int hours, minutes, input;
 
-	printf("%d Hours, %d Minutes.\n", hrs, mins);
+    printf("Enter minutes:");
+    scanf("%d", &input);
 
-	return(0);
+    hours = input / 60;
+    minutes = input % 60;
+
+    printf("entered minutes is %d hours and %d minutes\n", hours, minutes);
+
+    return 0;
 }
