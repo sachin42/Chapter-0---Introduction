@@ -1,3 +1,5 @@
+//Write a C program which will invoke the command processor to execute a command.
+
 #include<stdio.h>
 #include<stdlib.h>
 
