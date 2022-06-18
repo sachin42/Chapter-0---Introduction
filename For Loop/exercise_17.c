@@ -1,4 +1,4 @@
-// Write a program in C to make such a pattern like a pyramid with numbers increased by 1.
+// rite a program in C to make such a pattern like a pyramid with a number which will repeat the number in the same row
 #include <stdio.h>
 int main()
 {
@@ -10,13 +10,14 @@ int main()
    {
         for(l=spc;l>=1;l--)
             {
-               printf(" ");
+              printf(" ");
             }
-	      for(j=1;j<=i;j++)
-	         {
-               printf("%d ",t++);
+        for(j=1;j<=i;j++)
+            {
+	        printf("%d ",t);
             }
 	printf("\n");
+    t++;
     spc--;
    }
 }
